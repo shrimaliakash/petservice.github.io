@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: 0.2s linear;
+}
+/* 
+$carrot-color: #e67e22;
+$black: #130f40;
+$white: #fff;
+$light-color: #666;
+$light-bg: #eee;
+$border: 0.2rem solid $black;
+$box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+
+@mixin grid($val) {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+	gap: 1.5rem;
+} */
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 4rem;
+}
+
+.btn {
+	display: inline-block;
+	margin-top: 1rem;
+	padding: .8rem 2.8rem;
+	border-radius: 5rem;
+	border-top-left-radius: 0;
+	border: 0.2rem solid #130f40;
+	cursor: pointer;
+	background: none;
+    color: #130f40;
+	font-size: 1.7rem;
+	overflow: hidden;
+	z-index: 0;
+	position: relative;
+}
+
+.btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #130f40;
+	z-index: -1;
+	transition: .2s linear;
+	clip-path: circle(0% at 0% 5%);
+}
+
+.btn:hover::before {
+	clip-path: circle(100%);
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: translateY(3rem);
+		opacity: 0;
+	}
+}
+
+body {
+	height: 300rem;
+}
+
+.header {
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 9%;
+	box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	transform: translateY(-10rem);
+}
+
+.header.active {
+	transform: translateY(0rem);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #130f40;
+    font-weight: bolder;
+}
+
+
+i {
+    color: #e67e22;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.navbar a:hover {
+    color: #e67e22;
+}
+
+.icons a, .icons div {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: #130f40;
+    cursor: pointer;
+}
+
+.icons a:hover, .icons div:hover {
+    color: #e67e22;
+}
+
+.login-form {
+	position: absolute;
+	top: 120%;
+	right: 2rem;
+	width: 35rem;
+	border-radius: 1rem;
+	background: #fff;
+	box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+	padding: 2rem;
+	display: none;
+}
+
+.login-form.active {
+	display: block;
+	animation: fadeIn .4s linear;
+}
+
+h3 {
+    color: #130f40;
+	font-size: 2.5rem;
+	padding-bottom: .5rem;
+}
+
+.box {
+	width: 100%;
+	border-bottom: 0.2rem solid #130f40;
+	border-width: .1rem;
+	padding: 1.5rem 0;
+	font-size: 1.6rem;
+	color: #130f40;
+	text-transform: none;
+	margin: 1rem 0;
+}
+
+.remember {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	padding: 1rem 0;
+}
+
+label {
+	font-size: 1.5rem;
+	cursor: pointer;
+    color: #666;
+}
+
+.btn {
+	width: 100%;
+	text-align: center;
+	margin: 1.5rem 0;
+}
+
+.btn:hover {
+	background: #130f40;
+}
+
+.links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.links a {
+	font-size: 1.4rem;
+	color: #e67e22;
+}
+
+.links a:hover {
+	color: #130f40;
+	text-decoration: underline;
+}
+
+#menu-btn {
+    display: none;
+}
+
+
+/* media queries */
+@media (max-width: 991px) {
+
+	html {
+		font-size: 55%;
+	}
+
+	.header {
+		padding: 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+
+	#menu-btn {
+		display: inline-block;
+	}
+
+	.header .navbar {
+		position: absolute;
+		top: 99%;
+		left: 0;
+		right: 0;
+		background: #fff;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+
+	.header .navbar.active {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	.header .navbar a {
+		display: block;
+		margin: 2rem;
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 450px) {
+
+	html {
+		font-size: 50%;
+	}
+
+	.header .login-form {
+		width: 90%;
+	}
+}
+
+.wrapper {
+	height: 100vh;
+  }
+  .myColor {
+	background-image: linear-gradient(to right, #f83600 50%, #f9d423 150%);
+  }
+  .myShadow {
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .myBtn {
+	border-radius: 50px;
+	font-weight: bold;
+	font-size: 20px;
+	background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+	border: none;
+  }
+  .myBtn:hover {
+	background-image: linear-gradient(to right, #495aff 0%, #0acffe 100%);
+  }
+  .myHr {
+	height: 2px;
+	border-radius: 100px;
+  }
+  .myLinkBtn {
+	border-radius: 100px;
+	width: 50%;
+	border: 2px solid #fff;
+  }
+  @media (max-width: 720px) {
+	.wrapper {
+	  margin: 2px;
+	}
+  }
