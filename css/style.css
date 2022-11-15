@@ -259,6 +259,41 @@ label {
 	height: 12rem;
 }
 
+.about {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.about .image{
+	flex: 1 1 40rem;
+}
+
+.about .image img{
+	width: 100%;
+}
+
+.content {
+	flex: 1 1 40rem;
+}
+
+.content h3 {
+	color: #130f40;
+	font-size: 4rem;
+}
+
+.content h3 span {
+	color: #e67e22;
+}
+
+p {
+	font-size: 1.6rem;
+	color: #666;
+	padding: 1rem 0;
+	line-height: 2;
+}
+
 /* media queries */
 @media (max-width: 991px) {
 
