@@ -294,6 +294,50 @@ p {
 	line-height: 2;
 }
 
+.dog-food, .cat-food {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 2rem 0;
+}
+
+.dog-food, .cat-food .image {
+	flex: 1 1 40rem;
+}
+
+.dog-food, .cat-food .image img {
+	width: 100%;
+}
+
+.content {
+	flex: 1 1 40rem;
+	text-align: center;
+}
+
+.content h3 {
+	font-size: 3.5rem;
+	color: #130f40;
+}
+
+.content h3 span {
+	color: #e67e22;
+}
+
+.amount {
+	font-size: 3.5rem;
+	color: #130f40;
+	padding: .5rem 0;
+}
+
+a img {
+	height: 15rem;
+	margin-top: 1rem;
+}
+
+a:hover img {
+	transform: rotate(15deg);
+}
+
 /* media queries */
 @media (max-width: 991px) {
 
