@@ -14,6 +14,11 @@
         <link rel="stylesheet" href="css/bootstrap.css.map" />
         <!-- custom css file link -->
         <link rel="stylesheet" href="css/style.css">
+        
+        <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- header section starts -->
@@ -31,7 +36,7 @@
 
             <div class="icons">
                 <div class="fas fa-bars" id="menu-btn"></div>
-                <a href="#" class="fas fa-shopping-cart"></a>
+                <div class="fas fa-shopping-cart" id="shopping-btn"></div>
                 <div class="fas fa-user" id="login-btn"></div>
             </div>
 
@@ -53,6 +58,38 @@
                     <a href="signup.html">sign up</a>
                 </div>
 
+            </form>
+
+            <form action="" class="shopping-cart">
+                <div class="box">
+                    <i class="fas fa-trash"></i>
+                    <img src="image/product_01.jpg" alt="">
+                    <div class="content">
+                        <h3>Purepet Ocean Fish Adult Dry Cat Food</h3>
+                        <span class="price">₹820.00</span>
+                        <span class="quantity">qty: 7kg</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-trash"></i>
+                    <img src="image/product_06.jpg" alt="">
+                    <div class="content">
+                        <h3>Purepet Chicken & Vegetable Adult Dry Dog Food</h3>
+                        <span class="price">₹1600.00</span>
+                        <span class="quantity">qty: 20kg</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-trash"></i>
+                    <img src="image/product_03.jpg" alt="">
+                    <div class="content">
+                        <h3>Drools Kitten(1-12 Months) Dry Cat Food, Ocean Fish</h3>
+                        <span class="price">₹660.00</span>
+                        <span class="quantity">qty: 4kg</span>
+                    </div>
+                </div>
+                <div class="total"> total : ₹3080.00</div>
+                <a href="#" class="btn">checkout</a>
             </form>
         </header>
         <!-- header section ends -->
@@ -137,8 +174,8 @@
                 <div class="box">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <!-- <a href="#" class="fas fa-heart"></a> -->
+                        <a href="#open_product" id="opendialog1" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="image/product_01.jpg" alt="">
@@ -147,13 +184,18 @@
                         <h3>Purepet Ocean Fish Adult Dry Cat Food, 7kg</h3>
                         <div class="amount">₹820.00</div>
                     </div>
+                    <div id="open_product">
+                        <div class="image" id="product_01">
+                            <img src="image/product_01.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="box">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <!-- <a href="#" class="fas fa-heart"></a> -->
+                        <a href="#open_product" id="opendialog2" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="image/product_02.jpg" alt="">
@@ -167,8 +209,8 @@
                 <div class="box">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <!-- <a href="#" class="fas fa-heart"></a> -->
+                        <a href="#open_product" id="opendialog3" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="image/product_03.jpg" alt="">
@@ -182,8 +224,8 @@
                 <div class="box">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <!-- <a href="#" class="fas fa-heart"></a> -->
+                        <a href="#open_product" id="opendialog4" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="image/product_04.jpg" alt="">
@@ -197,8 +239,8 @@
                 <div class="box">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <!-- <a href="#" class="fas fa-heart"></a> -->
+                        <a href="#open_product" id="opendialog5" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="image/product_05.jpg" alt="">
@@ -212,8 +254,8 @@
                 <div class="box">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
+                        <!-- <a href="#" class="fas fa-heart"></a> -->
+                        <a href="#open_product" id="opendialog6" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
                         <img src="image/product_06.jpg" alt="">
@@ -224,6 +266,7 @@
                     </div>
                 </div>
             </div>
+            
         </section>
         <!-- shop section ends -->
 
