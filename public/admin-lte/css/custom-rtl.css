@@ -1,0 +1,27 @@
+@font-face{
+  font-family:'DroidKufi-Regular';src:url('../fonts/DroidKufi-Regular.eot?#iefix');src:local('درويد كوفي'),
+  local('DroidKufi-Regular'),url('../fonts/DroidKufi-Regular.woff') format('woff');
+}
+
+body {
+  font-family: DroidKufi-Regular, tahoma, arial;
+}
+.file-caption {
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+.btn-file {
+  border-bottom-right-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+}
+.datepicker-dropdown {
+  right: auto;
+}
+.input-group .form-control:last-child.datepicker {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
