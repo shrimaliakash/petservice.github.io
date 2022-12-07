@@ -12,6 +12,77 @@ return [
     'permission'  => '',
     'submenu'     => []
   ],
+  [
+    'link'        => '/menu',
+    'title'       => [
+      'en'        => 'menu',
+      'ar'        => 'اللوحة الرئيسية'
+    ],
+    'icon'        => '<i class="fa fa-dashboard"></i>',
+    'permission'  => '',
+    'submenu'     => []
+  ],
+  [
+    'link'        => '/home',
+    'title'       => [
+      'en'        => 'home',
+      'ar'        => 'اللوحة الرئيسية'
+    ],
+    'icon'        => '<i class="fa fa-dashboard"></i>',
+    'permission'  => '',
+    'submenu'     => []
+  ],
+  [
+    'link'        => '/about',
+    'title'       => [
+      'en'        => 'about',
+      'ar'        => 'اللوحة الرئيسية'
+    ],
+    'icon'        => '<i class="fa fa-dashboard"></i>',
+    'permission'  => '',
+    'submenu'     => []
+  ],
+  [
+    'link'        => '/shop',
+    'title'       => [
+      'en'        => 'shop',
+      'ar'        => 'اللوحة الرئيسية'
+    ],
+    'icon'        => '<i class="fa fa-dashboard"></i>',
+    'permission'  => '',
+    'submenu'     => []
+  ],
+  [
+    'link'        => '/service',
+    'title'       => [
+      'en'        => 'service',
+      'ar'        => 'اللوحة الرئيسية'
+    ],
+    'icon'        => '<i class="fa fa-dashboard"></i>',
+    'permission'  => '',
+    'submenu'     => []
+  ],
+  [
+    'link'        => '/plan',
+    'title'       => [
+      'en'        => 'plan',
+      'ar'        => 'اللوحة الرئيسية'
+    ],
+    'icon'        => '<i class="fa fa-dashboard"></i>',
+    'permission'  => '',
+    'submenu'     => []
+  ],
+  [
+    'link'        => '/contact',
+    'title'       => [
+      'en'        => 'contact',
+      'ar'        => 'اللوحة الرئيسية'
+    ],
+    'icon'        => '<i class="fa fa-dashboard"></i>',
+    'permission'  => '',
+    'submenu'     => []
+  ],
+
   //general settings
   [
     'link'        => '#',

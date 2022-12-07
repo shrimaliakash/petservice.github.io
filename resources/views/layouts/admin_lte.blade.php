@@ -203,7 +203,6 @@
         <?php
         $admin_lang   = App::getLocale();
         $admin_menus  = config('admin_lte');
-
         function fetchSubMenu($menu, $admin_lang){
           $tags = '<li class="treeview">';
           $tags .= '<a href="'.url($menu['link']).'">'.$menu['icon'];
